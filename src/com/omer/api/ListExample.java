@@ -1,6 +1,7 @@
 package com.omer.api;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ListExample {
@@ -25,6 +26,18 @@ public class ListExample {
         chars.add('b');
         chars.set(1, 'c');
         chars.remove(0);
-        System.out.print(chars.size() + " " + chars.contains('b'));
+        System.out.println(chars.size() + " " + chars.contains('b'));
+        System.out.println("-------------------------------");
+        String[] array = {"Natural History", "Science"};
+        List<String> museum = Arrays.asList(array);
+        museum.set(0, "Art");
+        System.out.println(museum.contains("Art"));
+        System.out.println("-------------------------------");
+        List<Character> charExample = new ArrayList<>();
+        charExample.add('a');
+        charExample.add('b');
+        charExample.set(1,'c');
+        charExample.remove(0);
+        System.out.print(charExample.size());
      }
 }
