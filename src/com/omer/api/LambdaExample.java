@@ -9,5 +9,13 @@ public class LambdaExample {
         Predicate<String> pred2 = (s) -> false;
         //Predicate<String> pred3 = String s -> false; // line fail to compile
         Predicate<String> pred4 = (String s) -> false;
+        System.out.println("-------------------------------------");
+        Predicate<String> pred5 = (String s) -> true;
+        //Predicate<String> pred6 = (Integer s) -> true;
+        //Predicate<String> pred7 = (Object s) -> true;
+        System.out.println("-------------------------------");
+        //Predicate dash = c -> c.startsWith("-");// line doesn't compile
+        Predicate<String> dash2 = c -> c.startsWith("-");
+        System.out.println(dash2.test("-"));
     }
 }
