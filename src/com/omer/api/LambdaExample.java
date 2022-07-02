@@ -17,5 +17,8 @@ public class LambdaExample {
         //Predicate dash = c -> c.startsWith("-");// line doesn't compile
         Predicate<String> dash2 = c -> c.startsWith("-");
         System.out.println(dash2.test("-"));
+        System.out.println("-------------------------------");
+        Predicate clear = c -> c.equals("clear");
+        System.out.println(clear.test("pink"));
     }
 }

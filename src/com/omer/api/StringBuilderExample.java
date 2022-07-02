@@ -15,5 +15,11 @@ public class StringBuilderExample {
         //sb = new StringBuilder("radical ").insert(7,"robots");
         sb = new StringBuilder("radical ").insert(sb.length(), "robots");
         System.out.print(sb);
+        System.out.println("--------------------");
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("red");
+        sb2.deleteCharAt(0);
+        sb2.delete(1,2);
+        System.out.println(sb2);
     }
 }
