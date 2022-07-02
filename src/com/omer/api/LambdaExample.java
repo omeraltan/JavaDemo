@@ -1,4 +1,5 @@
 package com.omer.api;
+import java.util.List;
 import java.util.function.Predicate;
 public class LambdaExample {
     public static void main(String[] args) {
@@ -20,5 +21,14 @@ public class LambdaExample {
         System.out.println("-------------------------------");
         Predicate clear = c -> c.equals("clear");
         System.out.println(clear.test("pink"));
+        System.out.println("-------------------------------");
+
+    }
+
+    public static void print(List<Integer> list, Predicate<Integer> p){
+        for (int num : list)
+            if (p.test(num)) {
+                System.out.println(num);
+            }
     }
 }
