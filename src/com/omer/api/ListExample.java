@@ -39,5 +39,14 @@ public class ListExample {
         charExample.set(1,'c');
         charExample.remove(0);
         System.out.print(charExample.size());
+        System.out.println("-------------------------------");
+        List<Integer> pennies = new ArrayList<>();
+        pennies.add(3);
+        pennies.add(2);
+        pennies.add(1);
+        pennies.remove(2);
+        System.out.println(pennies);
+        System.out.println("-------------------------------");
+
      }
 }

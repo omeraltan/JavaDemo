@@ -21,5 +21,9 @@ public class StringBuilderExample {
         sb2.deleteCharAt(0);
         sb2.delete(1,2);
         System.out.println(sb2);
+        System.out.println("--------------------");
+        StringBuilder builder = new StringBuilder("54321");
+        builder.substring(2);
+        System.out.println(builder.charAt(1));
     }
 }

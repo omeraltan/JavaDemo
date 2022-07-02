@@ -1,5 +1,6 @@
 package com.omer.api;
 
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +31,23 @@ public class StringExample {
         System.out.println(balloons);
         System.out.println("-------------------------------");
         String builder = "54321";
-        builder = builder.substring(4);
+        builder = builder.substring(1);
         System.out.println(builder.charAt(2));
+        System.out.println("-------------------------------");
+        secret("Mystery Omer");
+        System.out.println("-------------------------------");
+        /* Which of the following types can pass as a parameter to the replace() method on the String class?*/
+        String name = "Ömer ALTAN";
+        char charTest = 'a';
+        String nameTest = "Ebru";
+        StringBuilder sbTest = new StringBuilder("Adil");
+        System.out.println(name.replace('e', charTest));
+        System.out.println(name.replace('e', nameTest.charAt(3)));
+        System.out.println(name.replace('e', sbTest.charAt(2)));
+    }
+    public static void secret(StringBuilder mystery){
+        char ch = mystery.charAt(3);
+        mystery = mystery.insert(1, "more");
+        int num = mystery.length();
     }
 }
