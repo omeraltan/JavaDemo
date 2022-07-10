@@ -6,15 +6,15 @@ import java.io.IOException;
 import java.io.Reader;
 
 public class TryWithResources {
-    public static void main(String[] args) {
-        /*
-        * try (Reader reader = new BufferedReader(new FileReader(file))){
-            //read form file
+    public static void main(String[] args) throws IOException {
+
+        try (Reader reader = new BufferedReader(new FileReader("Text.file"))){
+            assert (reader.read() <= 0) : "Okuma başarısız!";
+            reader.read();
         }catch (IOException e){
-            log();
             throw e;
         }
-        * */
+
 
     }
 }
