@@ -17,5 +17,8 @@ public class ZoneDateTimeExample2 {
         //Reminder for Mandras, Oregon:
         System.out.println("Zoned DateTime (Mandras, OR) of reminder: " + reminder.withZoneSameInstant(ZoneId.of("US/Pacific")));
 
+        // What is the result ?
+        ZonedDateTime zd = ZonedDateTime.parse("2020-05-04T08:05:00+01:00");
+        System.out.println(zd.getMonth() + " " + zd.getDayOfMonth());
     }
 }

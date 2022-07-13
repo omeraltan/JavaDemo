@@ -39,5 +39,6 @@ public class ZoneDateExample {
 
         ZonedDateTime followingThursdayDateTime = zTotalityDateTime.with(TemporalAdjusters.next(DayOfWeek.THURSDAY));
         System.out.println("Thursday following the totality: " + followingThursdayDateTime);
+
     }
 }
